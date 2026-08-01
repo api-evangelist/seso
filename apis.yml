@@ -1,8 +1,25 @@
 aid: seso
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/seso.png
 name: Seso
-description: 'Seso is a company surfaced as a portfolio company of bond-capital, index-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: hr-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Seso is an all-in-one employee management platform built for U.S. agricultural
+  operations, serving customers across all 50 states including 35 of the top 100 agricultural
+  employers. Its software combines a modern farm HR system, compliant digital onboarding
+  (I-9/W-4 with direct E-Verify integration), H-2A visa filing and compliance backed
+  by legal resources, self-serve and managed payroll, and digital paycards for paycheck
+  delivery. Seso also provides H-2A worker services such as consulate scheduling, recruiting,
+  and logistics coordinated from its Monterrey, Mexico office. Backed by Bond Capital
+  and Index Ventures. No public developer API is currently published.'
 url: https://raw.githubusercontent.com/api-evangelist/seso/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Hr Tech
+- Agriculture
+- Payroll
+- Onboarding
+- H-2A Visa
+- Compliance
+- Workforce Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/seso-domain-security.yml
 - type: Website
   url: https://sesolabor.com
+- type: Login
+  url: https://app.sesolabor.com
+- type: Support
+  url: https://sesolabor.helpjuice.com/
+- type: Blog
+  url: https://sesolabor.com/blog
+- type: TermsOfService
+  url: https://sesolabor.com/legal/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://sesolabor.com/legal/privacy-policy
+- type: Careers
+  url: https://sesolabor.com/company/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/sesolabor
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
